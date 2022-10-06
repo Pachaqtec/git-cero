@@ -1,8 +1,8 @@
 function points(games) {
   return games.reduce((acc, game) => {
-    let victory = game[0] > game[2] ? 3 : 0;
-    if (game[0] === game[2]) victory = 1;
+    if (game[0] === game[2]) return acc += 1;
 
+    let victory = game[0] > game[2] ? 3 : 0;
     return acc + victory;
   }, 0);
 }
