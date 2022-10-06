@@ -3,7 +3,7 @@ function points(games) {
     if (game[0] === game[2]) return acc += 1;
 
     let victory = game[0] > game[2] ? 3 : 0;
-    return acc + victory;
+    return acc += victory;
   }, 0);
 }
 
