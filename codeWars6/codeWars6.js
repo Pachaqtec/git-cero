@@ -3,7 +3,7 @@ function DNAtoRNA(dna) {
   // return dna.replaceAll('T', 'U');
 
   //version 2
-  return dna.replace(/[T]/g, "U");
+  return dna.replace(/T/g, "U");
 }
 
 /*
