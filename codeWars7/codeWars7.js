@@ -1,5 +1,5 @@
 function countSheeps(arrayOfSheep) {
-  return arrayOfSheep.filter((arr) => arr).length;
+  return arrayOfSheep.filter(shepp => shepp).length;
 }
 
 console.log(
