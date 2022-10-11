@@ -9,9 +9,12 @@ function powersOfTwo(n) {
   //   return container;
 
   //   Version 2
-  return new Array(n + 1).fill().map((_, i) => 2 ** i);
+  //   return new Array(n + 1).fill().map((_, i) => 2 ** i);
+
+  // Version 3
+  return Array.from({ length: n + 1 }, (_, i) => 2 ** i);
 }
 
-// console.log(0);
-// console.log(1);
-// console.log(4);
+console.log(powersOfTwo(0));
+console.log(powersOfTwo(1));
+console.log(powersOfTwo(4));
